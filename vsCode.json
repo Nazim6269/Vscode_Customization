@@ -1,0 +1,68 @@
+{
+  "editor.fontSize": 18,
+  "editor.fontFamily": "Fira Code, Operator Mono",
+  "editor.fontLigatures": true,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "expand",
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.tslint": true,
+    "source.organizeImports": true
+  },
+
+  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.fontFamily": "Fira Code, Operator Mono",
+  "workbench.colorTheme": "Learn with Sumit - Peace of the eye",
+  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.profiles.windows": {
+    "Git Bash": {
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "terminal.integrated.defaultProfile.windows": "Git Bash"
+    }
+  },
+
+  "workbench.colorCustomizations": {
+    "terminalCursor.background": "#84a6a8",
+    "terminalCursor.foreground": "#0ad3f1",
+    "terminal.ansiGreen": "#e20ee9",
+    "terminal.ansiMagenta": "#210be4",
+    "terminal.ansiYellow": "#3bf4fa",
+    "editor.selectionBackground": "#ae9c9c"
+  },
+  "editor.guides.bracketPairsHorizontal": true,
+  "editor.autoClosingBrackets": "always",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": true,
+  "editor.fontVariations": false,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "files.autoSave": "onFocusChange",
+  "window.zoomLevel": 0.5,
+  "editor.fontWeight": "normal",
+  "eslint.alwaysShowStatus": true,
+  "liveServer.settings.donotShowInfoMsg": true
+}
