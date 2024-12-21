@@ -1,6 +1,6 @@
 {
-  "editor.fontSize": 18,
-  "editor.fontFamily": "Fira Code, Operator Mono",
+  "editor.fontSize": 24,
+  "editor.fontFamily": "fira code, monospace",
   "editor.fontLigatures": true,
   "editor.wordWrap": "on",
   "editor.minimap.enabled": false,
@@ -14,10 +14,8 @@
       }
     ]
   },
-
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "expand",
-
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "[javascript]": {
@@ -28,24 +26,42 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.tslint": true,
-    "source.organizeImports": true
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
-
-  "terminal.integrated.fontSize": 18,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma",
+    "editor.formatOnSave": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.options": {
+    "configFile": "./.eslintrc.json"
+  },
+  "eslint.alwaysShowStatus": true,
+  "terminal.integrated.fontSize": 22,
   "terminal.integrated.fontWeight": "normal",
-  "terminal.integrated.fontFamily": "Fira Code, Operator Mono",
-  "workbench.colorTheme": "Learn with Sumit - Peace of the eye",
+  "terminal.integrated.fontFamily": "fira Code, monospace",
   "workbench.iconTheme": "material-icon-theme",
   "terminal.integrated.profiles.windows": {
     "Git Bash": {
-      "path": "C:\\Program Files\\Git\\bin\\bash.exe",
-      "terminal.integrated.defaultProfile.windows": "Git Bash"
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe"
     }
   },
-
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
   "workbench.colorCustomizations": {
     "terminalCursor.background": "#84a6a8",
     "terminalCursor.foreground": "#0ad3f1",
@@ -59,10 +75,12 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.guides.bracketPairs": true,
   "editor.fontVariations": false,
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
   "files.autoSave": "onFocusChange",
   "window.zoomLevel": 0.5,
   "editor.fontWeight": "normal",
-  "eslint.alwaysShowStatus": true,
-  "liveServer.settings.donotShowInfoMsg": true
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.colorTheme": "Learn with Sumit - Peace of the eye",
+  "workbench.sideBar.location": "right",
+  "json.schemas": [],
+  "editor.codeActions.triggerOnFocusChange": true
 }
