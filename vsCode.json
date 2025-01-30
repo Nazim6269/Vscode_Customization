@@ -1,7 +1,7 @@
 {
-  //editor
+  // Editor Settings
   "editor.fontSize": 24,
-  "editor.fontFamily": "fira code, monospace",
+  "editor.fontFamily": "Fira Code, monospace",
   "editor.fontLigatures": true,
   "editor.wordWrap": "on",
   "editor.minimap.enabled": false,
@@ -15,10 +15,12 @@
       }
     ]
   },
-  //cursor
+
+  // Cursor Settings
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "expand",
-  //config related to formating
+
+  // Formatting Settings
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "[javascript]": {
@@ -44,8 +46,11 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "always",
     "source.fixAll.tslint": "always",
-    "source.removeUnusedImports": "always" //this line delete unused imports
+    "source.removeUnusedImports": "always", //this line delete unused variables
+    "source.organizeImports": "always"
   },
+
+  // ESLint Settings
   "eslint.enable": true,
   "eslint.validate": [
     "javascript",
@@ -57,17 +62,22 @@
     "configFile": "./.eslintrc.json",
     "eslint.alwaysShowStatus": true
   },
-  //terminal
+  "eslint.codeActionsOnSave.rules": null,
+  "eslint.format.enable": true,
+
+  // Terminal Settings
   "terminal.integrated.fontSize": 22,
   "terminal.integrated.fontWeight": "normal",
-  "terminal.integrated.fontFamily": "fira Code, monospace",
-  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.fontFamily": "Fira Code, monospace",
   "terminal.integrated.profiles.windows": {
     "Git Bash": {
       "path": "C:\\Program Files\\Git\\bin\\bash.exe"
     }
   },
   "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+  // UI Customizations
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {
     "terminalCursor.background": "#84a6a8",
     "terminalCursor.foreground": "#0ad3f1",
@@ -81,14 +91,21 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.guides.bracketPairs": true,
   "editor.fontVariations": false,
+
+  // Disable TypeScript Warnings
+  "typescript.suggest.autoImports": false,
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": false,
+  "typescript.validate.enable": false,
+  "javascript.validate.enable": false,
+
+  // Miscellaneous
   "files.autoSave": "onFocusChange",
   "window.zoomLevel": 0.5,
   "editor.fontWeight": "normal",
-  "liveServer.settings.donotShowInfoMsg": true,
-  "workbench.colorTheme": "Learn with Sumit - Peace of the eye - Dracula version",
+  "workbench.colorTheme": "Learn with Sumit - Peace of the eye",
   "workbench.sideBar.location": "right",
   "json.schemas": [],
   "editor.codeActions.triggerOnFocusChange": true,
-  "eslint.codeActionsOnSave.rules": null,
-  "eslint.format.enable": true
+  "workbench.settings.applyToAllProfiles": []
 }
