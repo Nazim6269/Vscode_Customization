@@ -1,10 +1,12 @@
 {
-  // Editor Settings
+  // editor
   "editor.fontSize": 24,
-  "editor.fontFamily": "Fira Code, monospace",
+  "editor.fontFamily": "Fira Code, Operator Mono",
   "editor.fontLigatures": true,
   "editor.wordWrap": "on",
   "editor.minimap.enabled": false,
+  "editor.fontWeight": "normal",
+  "editor.codeActions.triggerOnFocusChange": true,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -15,97 +17,84 @@
       }
     ]
   },
-
-  // Cursor Settings
+  // cursor
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "expand",
-
-  // Formatting Settings
+  // config related to code formatting
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
   },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "always",
     "source.fixAll.tslint": "always",
-    "source.removeUnusedImports": "always", //this line delete unused variables
     "source.organizeImports": "always"
   },
-
-  // ESLint Settings
-  "eslint.enable": true,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-  "eslint.options": {
-    "configFile": "./.eslintrc.json",
-    "eslint.alwaysShowStatus": true
-  },
-  "eslint.codeActionsOnSave.rules": null,
-  "eslint.format.enable": true,
-
-  // Terminal Settings
-  "terminal.integrated.fontSize": 22,
+  "eslint.alwaysShowStatus": true,
+  //terminal
+  "terminal.integrated.fontSize": 24,
   "terminal.integrated.fontWeight": "normal",
-  "terminal.integrated.fontFamily": "Fira Code, monospace",
-  "terminal.integrated.profiles.windows": {
-    "Git Bash": {
-      "path": "C:\\Program Files\\Git\\bin\\bash.exe"
-    }
-  },
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-
-  // UI Customizations
+  "terminal.integrated.fontFamily": "Fira Code, Operator Mono",
+  "workbench.colorTheme": "Learn with Sumit - Peace of the eye",
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.sideBar.location": "right",
+  // terminal customization
   "workbench.colorCustomizations": {
-    "terminalCursor.background": "#84a6a8",
-    "terminalCursor.foreground": "#0ad3f1",
-    "terminal.ansiGreen": "#e20ee9",
-    "terminal.ansiMagenta": "#210be4",
-    "terminal.ansiYellow": "#3bf4fa",
-    "editor.selectionBackground": "#ae9c9c"
+    "terminal.background": "#1D2021",
+    "terminal.foreground": "#A89984",
+    "terminalCursor.background": "#A89984",
+    "terminalCursor.foreground": "#A89984",
+    "terminal.ansiBlack": "#1D2021",
+    "terminal.ansiBlue": "#0D6678",
+    "terminal.ansiBrightBlack": "#665C54",
+    "terminal.ansiBrightBlue": "#0D6678",
+    "terminal.ansiBrightCyan": "#8BA59B",
+    "terminal.ansiBrightGreen": "#95C085",
+    "terminal.ansiBrightMagenta": "#8F4673",
+    "terminal.ansiBrightRed": "#FB543F",
+    "terminal.ansiBrightWhite": "#FDF4C1",
+    "terminal.ansiBrightYellow": "#FAC03B",
+    "terminal.ansiCyan": "#8BA59B",
+    "terminal.ansiGreen": "#95C085",
+    "terminal.ansiMagenta": "#8F4673",
+    "terminal.ansiRed": "#FB543F",
+    "terminal.ansiWhite": "#A89984",
+    "terminal.ansiYellow": "#FAC03B"
   },
-  "editor.guides.bracketPairsHorizontal": true,
-  "editor.autoClosingBrackets": "always",
-  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-  "editor.guides.bracketPairs": true,
-  "editor.fontVariations": false,
-
-  // Disable TypeScript Warnings
-  "typescript.suggest.autoImports": false,
-  "typescript.disableAutomaticTypeAcquisition": true,
-  "typescript.tsserver.experimental.enableProjectDiagnostics": false,
-  "typescript.validate.enable": false,
-  "javascript.validate.enable": false,
 
   // Miscellaneous
   "files.autoSave": "onFocusChange",
   "window.zoomLevel": 0.5,
-  "editor.fontWeight": "normal",
-  "workbench.colorTheme": "Learn with Sumit - Peace of the eye",
-  "workbench.sideBar.location": "right",
-  "json.schemas": [],
-  "editor.codeActions.triggerOnFocusChange": true,
-  "workbench.settings.applyToAllProfiles": []
+  "workbench.settings.applyToAllProfiles": [],
+  "editor.autoClosingBrackets": "always",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": true,
+  "editor.language.brackets": [],
+  // Disable TypeScript Warnings
+  //"typescript.suggests.autoImports": true,
+  //"typescript.disableAutomaticTypeAcquisition": true,
+  //"typescript.tsserver.experimental.enableProjectDiagnostics": false,
+  //"typescript.validate.enable": false
+  //"javascript.validate.enable": false,
+
+  // Defining custom colors instead of default "Rainbow" for dark backgrounds.
+  "indentRainbow.colors": [
+    "rgba(255,255,74,0.2)",
+    "rgba(127,255,127,0.2)",
+    "rgba(255,127,255,0.2)",
+    "rgba(79,236,236,0.2)"
+  ],
+
+  // The indent color if the number of spaces is not a multiple of "tabSize".
+  "indentRainbow.errorColor": "rgba(128,32,32,0.6)",
+
+  // The indent color when there is a mix between spaces and tabs.
+  // To be disabled this coloring set this to an empty string.
+  "indentRainbow.tabmixColor": "rgba(128,32,96,0.6)"
 }
